@@ -1,9 +1,71 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    text-align: center;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-h1 {
-    color: #333;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#nav-links {
+    flex-grow: 1;
+}
+
+#toggle {
+    display: none;
+}
+
+.label {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.toggle-ball {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#mode-text {
+    margin-left: 5px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode #mode-text {
+    color: #fff;
+}
+
+.dark-mode .toggle-ball {
+    transform: translateX(25px);
 }

@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Your Website Title</title>
 </head>
 <body>
-    <h1>Hello, GitHub Pages!</h1>
-    <script src="script.js"></script>
+    <nav id="navbar">
+        <div class="container">
+            <span id="logo">Your Name</span>
+            <div id="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#resume">Resume</a>
+            </div>
+            <div class="toggle-container">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="label">
+                    <div class="toggle-ball"></div>
+                </label>
+                <span id="mode-text">Light Mode</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Hello, GitHub Pages!</h1>
+        <!-- Your content goes here -->
+    </div>
 </body>
 </html>
